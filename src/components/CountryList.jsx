@@ -20,6 +20,13 @@ function CountryList({ cities, isLoading }) {
     else return arr;
   }, []);
 
+  // const countriesUnique = new Set(
+  //   cities.map(city =>
+  //     JSON.stringify({ country: city.country, emoji: city.emoji }),
+  //   ),
+  // )
+  // const countries = [...countriesUnique].map(each => JSON.parse(each))
+
   return (
     <ul className={styles.countryList}>
       {countries.map((country) => (
