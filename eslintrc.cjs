@@ -17,5 +17,7 @@ module.exports = {
       { allowConstantExport: true },
     ],
     "react/prop-types": "off",
+    // Enable vue/script-setup-uses-vars rule
+    "no-unused-vars": "off",
   },
 };
