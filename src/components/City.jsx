@@ -58,7 +58,6 @@ function City() {
       </div>
 
       <div>
-        {" "}
         <BackButton />
       </div>
     </div>

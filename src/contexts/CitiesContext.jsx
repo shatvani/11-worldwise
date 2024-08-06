@@ -4,6 +4,13 @@ const BASE_URL = "http://localhost:8000";
 
 const CitiesContext = createContext();
 
+// const initialState = {
+//   cities: [],
+//   isLoading: false,
+//   currentCity: {},
+//   error: "",
+// };
+
 function CitiesProvider({ children }) {
   const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -27,7 +34,7 @@ function CitiesProvider({ children }) {
 
   async function getCity(id) {
     try {
-      setIsLoading(true);
+      setIsLoading(false);
       const res = await fetch(`${BASE_URL}/cities/${id}`);
       const data = await res.json();
       setCurrentCity(data);

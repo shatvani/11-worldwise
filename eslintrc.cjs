@@ -12,12 +12,15 @@ module.exports = {
   settings: { react: { version: "18.2" } },
   plugins: ["react-refresh"],
   rules: {
+    "react/prop-types": "off",
+    "no-unused-vars": "off",
+    "no-unused-vars": [
+      "error",
+      { vars: "all", args: "after-used", ignoreRestSiblings: false },
+    ],
     "react-refresh/only-export-components": [
       "warn",
       { allowConstantExport: true },
     ],
-    "react/prop-types": "off",
-    // Enable vue/script-setup-uses-vars rule
-    "no-unused-vars": "off",
   },
 };
