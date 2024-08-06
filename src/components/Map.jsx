@@ -11,6 +11,7 @@ import {
   useMapEvents,
 } from "react-leaflet";
 import { useGeolocation } from "../hooks/useGeolocation";
+import { useUrlPosition } from "../hooks/useUrlPosition";
 import Button from "./Button";
 
 const flagemojiToPNG = (flag) => {
@@ -23,23 +24,17 @@ const flagemojiToPNG = (flag) => {
 };
 
 function Map() {
-  // eslint-disable-next-line
   const { cities } = useCities();
 
-  // eslint-disable-next-line
   const [mapPosition, setMapPosition] = useState([40, 0]);
 
-  const [searchParams] = useSearchParams();
   const {
     isLoading: isLoadingPosition,
     position: geolocationPosition,
     getPosition,
   } = useGeolocation();
 
-  // eslint-disable-next-line
-  const mapLat = searchParams.get("lat");
-  // eslint-disable-next-line
-  const mapLng = searchParams.get("lng");
+  const [mapLat, mapLng] = useUrlPosition();
 
   useEffect(
     function () {
@@ -106,3 +101,4 @@ function DetectClick() {
 }
 
 export default Map;
+// eslint-disable-next-line
