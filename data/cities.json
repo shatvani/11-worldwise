@@ -47,42 +47,6 @@
         "lat": "48.85106696181292",
         "lng": "2.3510742187500004"
       }
-    },
-    {
-      "id": "0e70",
-      "cityName": "Modena",
-      "country": "Italy",
-      "emoji": "🇮🇹",
-      "date": "2024-08-13T16:58:01.959Z",
-      "notes": "test",
-      "position": {
-        "lat": "44.63724990159393",
-        "lng": "10.931396484375002"
-      }
-    },
-    {
-      "id": "7a58",
-      "cityName": "Kassel",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2024-08-13T17:10:28.826Z",
-      "notes": "",
-      "position": {
-        "lat": "51.32351213067643",
-        "lng": "9.492187500000002"
-      }
-    },
-    {
-      "id": "73eb",
-      "cityName": "Lovcica-Trubin",
-      "country": "Slovakia",
-      "emoji": "🇸🇰",
-      "date": "2024-08-13T17:16:13.103Z",
-      "notes": "sdad",
-      "position": {
-        "lat": "48.607422766930064",
-        "lng": "18.808593750000004"
-      }
     }
   ]
 }
